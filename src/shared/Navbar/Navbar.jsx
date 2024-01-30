@@ -17,47 +17,45 @@ function Navbar() {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <div className="container">
-      <nav className={nav ? "nav active" : "nav"}>
-        <a href="#" className="logo">
-          <img src={logo2} alt="logo" />
-        </a>
-        <input type="checkbox" className="menu-btn" id="menu-btn" />
-        <label className="menu-icon" htmlFor="menu-btn">
-          <span className="nav-icon"></span>
-        </label>
-        <ul className="menu">
-          <li className="nav-logo">
-            <a href="#" className="logo">
-              <img src={logo} alt="logo" />
-            </a>
-            <hr />
-          </li>
-          <li>
-            <a href="/#">Home</a>
-          </li>
-          <li>
-            <a href="/#">About us</a>
-          </li>
-          <li>
-            <a href="/#">Blog</a>
-          </li>
-          <li>
-            <a href="/#">Contact us</a>
-          </li>
-          <li className="navbar-cart-icon">
-            <a href="#">
-              <img  src={cart} alt="" />
-            </a>
-          </li>
-          <li className="sign-btn">
-            <a href="#">
-              <button>Sign up</button>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className={nav ? "nav active" : "nav"}>
+      <a href="#" className="logo">
+        <img src={logo2} alt="logo" />
+      </a>
+      <input type="checkbox" className="menu-btn" id="menu-btn" />
+      <label className="menu-icon" htmlFor="menu-btn">
+        <span className="nav-icon"></span>
+      </label>
+      <ul className="menu">
+        <li className="nav-logo">
+          <a href="#" className="logo">
+            <img src={logo} alt="logo" />
+          </a>
+          <hr />
+        </li>
+        <li>
+          <a href="/#">Home</a>
+        </li>
+        <li>
+          <a href="/#">About us</a>
+        </li>
+        <li>
+          <a href="/#">Blog</a>
+        </li>
+        <li>
+          <a href="/#">Contact us</a>
+        </li>
+        <li className="navbar-cart-icon">
+          <a href="#">
+            <img src={cart} alt="" />
+          </a>
+        </li>
+        <li className="sign-btn ">
+          <a href="#">
+            <button className="btn">Sign up</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
