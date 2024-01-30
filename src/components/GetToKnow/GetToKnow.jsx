@@ -3,11 +3,10 @@ import TeamWork from "./TeamWork/TeamWork";
 
 const GetToKnow = () => {
   return (
-    <div>
-      <h1>Get to know us</h1>
+    <section className="container">
       <TeamWork />
       <Environment />
-    </div>
+    </section>
   );
 };
 

@@ -3,13 +3,14 @@ import GetToKnow from "./components/GetToKnow/GetToKnow";
 import PopularCategories from "./components/PopularCategories/PopularCategories";
 import Footer from "./shared/Footer/Footer";
 import Navbar from "./shared/Navbar/Navbar";
+// import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <Navbar/>
       <Banner/>
-      <PopularCategories/>
+      {/* <PopularCategories/> */}
       <GetToKnow/>
       <Footer/>
     </div>

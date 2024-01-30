@@ -6,7 +6,9 @@ import combo from "../../assets/icons/combo.png";
 const PopularCategories = () => {
   return (
     <div>
-      <h1>Our Popular Categories</h1>
+      <h1>
+        Our Popular <span className="span-text">Categories</span>
+      </h1>
       <div>
         <button>
           <img src={pizza} alt="pizza" /> <h3>Pizzas</h3>
